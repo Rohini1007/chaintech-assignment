@@ -1,0 +1,633 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ /* these are fonts used in the assignment. */
+ @font-face {
+    font-family:poppins;
+    src: url(./Poppins/Poppins-Regular.ttf);
+ }
+ @font-face {
+    font-family: poppins-bold;
+    src: url(./Poppins/Poppins-ExtraBold.ttf);
+ }
+ @font-face {
+    font-family: poppin-italic;
+    src: url(./Poppins/Poppins-Italic.ttf);
+ }
+html,body{
+    width: 100%;
+    height: 100%;
+ }
+
+ /* first page . */
+#front-page{
+    height:100vh;
+    width: 100vw;
+    background-color:#060606 ;
+    
+ }
+
+ /* nav bar which has two parts left nav for compmany logo and right nav for the details. */
+ #nav{
+position: relative;
+width:100vw;
+height: 10vh;
+top: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+ }
+
+ /* it mainly contains the logo chintech */
+ #left-nav{
+ height: 100%;
+ width: 40%;
+ text-align:center;
+ padding-right: 30px;
+  padding-top: 1%;
+ }
+ #logo1>.c1{
+   position: absolute;
+   padding-top: 3%;
+ }
+#logo1>.h1{
+position: absolute;
+margin-top:.7%;
+margin-left:-1.5%;
+}
+#logo1>.a{
+    position: absolute;
+    margin-top: .7%;
+}
+#logo1>.i{
+    position: absolute;
+    margin: .7%;
+    margin-left: 1.6%;
+}
+#logo1>.i1{
+    position: absolute;
+    margin-top:0%;
+    margin-left: 1.6%;
+}
+#logo1>.n{
+    position: absolute;
+    margin-top:.7%;
+    margin-left:2.2% ;
+}
+#logo1>.t{
+    position: absolute;
+    margin-top: .1%;
+    margin-left: 3.9%;
+}
+#logo1>.e{
+    position: absolute;
+    margin-top: .8%;
+    margin-left:4.9% ;
+}
+#logo1>.c2{
+    position: absolute;
+    margin-top: .8%;
+    margin-left: 6.7%;
+}
+#logo1>.h{
+position: absolute;
+margin-left:8.3% ;
+margin-top: .1%;
+}
+
+/* right nav conataining the details or services provied in the nav bar itself. */
+#right-nav{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#right-nav>h3{
+font-family: poppins;
+font-size: 15px;
+color: white;
+}
+#cmpny{
+    color: #00FFA7;
+    font-family: poppins;
+    font-size: 14px;
+
+}
+
+/* it contains main heading to be displayed about the company */
+#text{
+    width: 100vw;
+    margin-top: 12vh;
+    text-align: center;
+}
+#text>h1{
+    font-size: 120px;
+    font-family: poppins-bold;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+    line-height:1;
+    letter-spacing: 4px;
+}
+.gradient{
+    background: linear-gradient(270deg, #00FFA7 0%, #FFFF00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#para{
+  height: 10vh;
+  width: 60vw;
+  font-size: 18px;
+  font-family: poppins;
+  font-weight: 500;
+  color: white;
+  margin-left: 20vw;
+  text-align: center;
+}
+
+/* its the side pannel contains the arrows icon . */
+#side{
+   height: 90px;
+   width: 100px;
+   position: absolute; 
+   right: 2%;
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   align-items:first baseline;
+}
+#side-cir{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid black;
+    background-color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#last-cir{
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+#first{
+    padding: 15px 20px;
+    border-radius: 50px;
+    border:3px solid black;
+    margin-top: 5%;
+    font-family: poppins;
+    font-size:15px;
+}
+#first>i{
+    font-size: 20px;
+}
+
+/* main styling of the second page */
+#second-page{
+    min-height: 200vh;
+    width: 100vw;
+    background-color: white;
+    overflow: hidden;
+
+}
+/* this the  main heading the services proviede by the company and its short detail. */
+#heading{
+    /* background-color: blue; */
+    width: 100vw;
+    height: 20vh;
+    padding:20px 20px;
+}
+#heading>h1{
+    font-family: poppins;
+    font-size: 50px;
+    font-weight: 600;
+}
+#heading>p{
+    font-family: poppins;
+    font-size: 18px ;
+    font-weight: 500;
+}
+/* courses conaton 4 cards which holds all the details about the course conatining the button , icon , company logo with images. */
+#course{
+    height: 60vh;
+    width: 100vw;
+    /* background-color: pink; */
+    display: flex;
+    gap: 10px;
+    margin-top: 3%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* card is the box which has a details about the courses which are being offered. */
+.card{
+    height: 100%;
+    width: 24%;
+    background-color: green;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+/* section1 has an heading and a circular logo of the company . */
+.section1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+    padding-top:8px ;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+}
+.section1>.cir{
+    height: 40px;
+    width: 40px;
+    background-color: #060606;
+    border-radius: 50px;
+    
+}
+.section1>h3{
+font-family: poppins;
+font-size: 15px;
+}
+.cir>svg{
+    position: absolute;
+    margin-left: 10px;
+    margin-top:8px;
+}
+.cir>.h{
+    position: absolute;
+    margin-left:14px;
+    margin-top: 13px;
+    z-index: 999999999;
+}
+/* section2 is divides into two parts that is heading and image part which is given in the services offered section . */
+.section2{
+    width: 100%;
+    height: 65%;
+}
+.section2>h3{
+    font-family: poppins;
+    text-align: center;
+    margin-top: 10px;
+}
+#img{
+    height: 55%;
+    width: 85%;
+    background-image: url("https://s3-alpha-sig.figma.com/img/7dc1/1c04/de59a4b2a378c99fbc44b9f25b66ab5f?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hq4P9IvWH1wOWOOhzN23MZjF5Ruu1~XMQ9nv72D3j04wi9GFxKuvf7NvjlOXhZ9yQlmsUwfGl5zgV8ba76xFZg43-5o1iRsTpt8G5waxEHPPrtj67XKUIdVqnWSSP9HtwhEKMs7h2yuiaFCVykaK7X7ZGHg3QpJsaxkgxuwmg7cFWcNUyyDAgaGz2KwMKoWHyBbKlCq5QuMKzEc7DgdphmRv3xc1KLjhMBdltVARuXrZv0Q10xxJErErPVPIjNtW2d2y2tRiuKqlchSs1pWIHar3yuD4holm4~4Oo69VAyQ-a7a5OFK-Aix8ZKBjzykqL8PjyPSSWGfjFGxMJciftw__");
+    background-position: center;
+    background-size: cover;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* section3 includes the explore button with aeeow icon with a circular linear gradient backgroun.  */
+.section3{
+    border-top: 2px solid black;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+}
+.section3>.last{
+    height: 7vh;
+    width: 11vw;
+    background-color: white;
+    margin-top: 4px;
+    margin-left: 8vw;
+    border-radius: 50px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.last>h4{
+    font-family: poppins;
+    padding: 6px 15px;
+}
+.icon{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #00FFA7 0%, #FFFF00 100%);
+
+}
+#box11{
+    background-color: #DFFFEE;
+}
+
+#box12{
+    background-color: #D9FDFF;
+}
+#box12>.section2>#img{
+    background-image: url("https://s3-alpha-sig.figma.com/img/1603/85d0/896a075f524b10272ca35ff215b26f21?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QI4v4zligdHks93y57LaD5MYdy6KHjrUpzUAxGtSi1478-fRrcI~OwAqd8oN4bqucZYgiLuKYrLjLappkarnJDjSxjrOKr8Sd1SUMts2LBp4S10O6bq9kH1DSeTLKnuaiWcI8OJrMSCJTjKsoDoufnpMP6pYUZCA5jUoL4o0IAbQRcMfEMopw0awG5BFRxu9fY1QWSFOM8tXDUVN9uStHp1G3SMd4vudffeipm0i8SUN3cWKmbTConJDLl1Dn5KVAZu4~zFBwA4RObBpLD3JdKisrkR7xDiPu86cPItZThj-z6wH2TANB4N1SFBgsaCSaA-XdCkUYiPXmK6Q5~bJrw__");
+    background-position: center;
+    background-size: cover;
+}
+#box12>.section3>.last{
+background-color: #060606;
+color: white;
+}
+#box12>.section3>.last>.icon>i{
+    color: black;
+}
+#box13{
+    background-color: #FFE6E6;
+}
+#box13>.section2>#img{
+    background-image: url("https://s3-alpha-sig.figma.com/img/0268/6b23/06ac292f9ecdacd4fec08f6e84737791?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LE2ZOa0LdKfXLframTUY3y~sOuSiXtS~2W--KsYk-iIvQ911Kg1JqDEp32yLtrjQlx4DYckFiDwPBdpPhX-5-5U5LgpRhRmqdixCvtgiEXoHkffRGvVSXFnhFO-~nGyGdTM~kjY7jHM77VtBWdjYOKhDCsY1m9Nr5RFziP6HZjGGdYF~ZBRem4mqn4FMjbPlx4hTTyU9MgDG9-nY5ebojGG5J0QimJEcCY~Z-2gfU6r-lSKxTQ9P4iiZ18b5zxcMg0SLglRfwA36B~lcg38B1QZh4Yu3Ewh7J9pUpTVppOmQMQ9vj8dGOjXz8Wk1wLJ8-Le1plKahOHgY12SM3atqA__");
+    background-position: center;
+    background-size: cover;
+}
+#box14{
+    background-color: #E0E3FB;
+}
+#box14>.section2>#img{
+    background-image: url("https://s3-alpha-sig.figma.com/img/7eb2/4ddc/a63b1062e0deeef5e72d0f4a374ffe2a?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hXjq0ATmZahpa7V6vXNfU6jH3Iks8nUmBYjt7woqH~ZjPLf9qND9xwnZdooZlB0f15aM20AyLISb5frFTLZgBzOJKD2xT9jn6h2iFvZ~8zjCmpmfUODm5OnMLjPG-phxU5qsAVt0MD8KPzf6wuumfWnS5evf~hKXCkli4J19dcUN5A~iBulxp~8pqhpmx5afIKunyOOXIs47CgSEFnpF58T~-DbsG1cyUf~9eE-7oFi5Ao~mLt-4nIiOBYuKbPBdnCWJQeeJqPIwf~YeT4yDGi96Zi2YuBORnBaW81vOCqu-cPDKKfsEHS~z6W9U4PgaznA1iZ1tG9jy8oXYYnuNgg__");
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* courses1 conaton 4 cards which holds all the details about the course conatining the button , icon , company logo with images. */
+#course1{
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    gap: 10px;
+    margin-top: 3%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#course1>#box12>.section3>.last{
+    background-color: #fff;
+    color: black;
+}
+
+/* footer is the last part with the company logo and some text which is denoted by footer and is styled using css. */
+
+#footer{
+    width: 100vw;
+    height: 50vh;
+    background-color: #030303;
+    margin-top: 30px;
+}
+
+/* here logo of the compnay the is chaintech is styled. */
+#footer>#logo{
+    height: 10vh;
+    width: 40vw;
+    /* position: relative; */
+    margin-left: 45%;
+    position: absolute;
+    margin-top: 5%;
+}
+#logo>.h1{
+   position: absolute;
+   top: 12px;
+   left: 15px;
+}
+#logo>.a{
+    position: absolute;
+    top: 16px;
+    left: 7%;
+}
+#logo>.i{
+    position: absolute;
+    top:16px;
+    left:11%;
+}
+#logo>.i1{
+    position: absolute;
+    top: 10px;
+    left: 11%;
+}
+#logo>.n{
+    position: absolute;
+    top: 16px;
+    left: 12.5%;
+}
+#logo>.t{
+    position: absolute;
+    top:8px;
+    left: 17%;
+}
+#logo>.e{
+    position: absolute;
+    top: 16px;
+    left:19% ;
+}
+#logo>.c2{
+    position: absolute;
+    top: 16px;
+    left: 23.5%;
+}
+#logo>.h{
+    position: absolute;
+    top: 7.5px;
+    left: 27.5%;
+}
+#last-text{
+    width: 80vw;
+    height: 20vh;
+    border-top: 1px solid gray;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 10%;
+    
+}
+#last-text>h4{
+    color: white;
+    font-size: 14px;
+    font-family: poppins;
+    margin-top: 3%;
+    margin-left: 35%;
+    font-weight: 500;
+}
+
+/* from here its the responsove part of the code here i have used query selectore for making it responsive where the max width is 500px.
+each secrion of the code is made responsive in the givenn width */
+
+@media (max-width:500px) {
+     #right-nav{
+     display: flex;
+     justify-content:end;
+     padding-right: 5%;
+    }
+
+    #right-nav>h3{
+        font-size: 8px;
+    }
+    
+    #right-nav>#cmpny{
+        font-size: 8px;
+    }
+    #left-nav{
+        text-align: start;
+        padding-left: 4%;
+    }  
+
+    #left-nav>#logo1>.h1{
+        position: absolute;
+        margin-top: 2%;
+        margin-left: -3.5%;
+    }
+
+   #left-nav>#logo1>.a{
+    display: none;
+   }
+   #left-nav>#logo1>.i{
+    display: none;
+   }
+   #left-nav>#logo1>.i1{
+    display: none;
+   }
+   #left-nav>#logo1>.n{
+    display: none;
+   }
+   #left-nav>#logo1>.t{
+    display: none;
+   }
+   #left-nav>#logo1>.e{
+    display: none;
+   }
+   #left-nav>#logo1>.c2{
+    display: none;
+   }
+   #left-nav>#logo1>.h{
+    display: none;
+   }
+
+   #text>h1{
+    font-size: 50px;
+    padding: 5px 5px;
+   } 
+
+   #text>#para{
+    font-size:10px;
+    margin-top: 10px;
+   }
+
+   #para>#first{
+    padding:10px 15px ;
+   }
+
+
+  #second-page>#heading>h1{
+    font-size: 20px;
+  }
+  #second-page>#heading>p{
+    font-size: 10px;
+  }
+  #second-page>#heading>#side{
+    display: none;
+  }
+
+  
+#second-page>#course>.card{
+    height: 50%;
+}
+   #second-page>#course>.card>.section1>.cir{
+    display: none;
+   }
+
+   #second-page>#course>.card>.section1>h3{
+    font-size: 8px;
+   }
+
+   #second-page>#course>.card>.section2>h3{
+    font-size: 10px;
+   }
+
+   #second-page>#course>.card>.section2>#img{
+    height: 55%;
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 10%;
+   }
+
+   #second-page>#course>.card>.section3>.last{
+    height: 3vh;
+    width: 11vw;
+    margin-left: 0vw;
+    margin-top: 3px;
+   }
+
+   #second-page>#course>.card>.section3>.last>h4{
+   font-size: 5px;
+   }
+
+   #second-page>#course>.card>.section3>.last>.icon{
+    display: none;
+   }
+
+#second-page>#course1{
+    margin-top: -35%;
+}
+
+   #second-page>#course1>.card{
+    height: 50%;
+}
+   #second-page>#course1>.card>.section1>.cir{
+    display: none;
+   }
+
+   #second-page>#course1>.card>.section1>h3{
+    font-size: 8px;
+   }
+
+   #second-page>#course1>.card>.section2>h3{
+    font-size: 10px;
+   }
+
+   #second-page>#course1>.card>.section2>#img{
+    height: 55%;
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 10%;
+   }
+
+   #second-page>#course1>.card>.section3>.last{
+    height: 3vh;
+    width: 11vw;
+    margin-left: 0vw;
+    margin-top: 3px;
+   }
+
+   #second-page>#course1>.card>.section3>.last>h4{
+   font-size: 5px;
+   }
+
+   #second-page>#course1>.card>.section3>.last>.icon{
+    display: none;
+   }
+
+   #second-page>#footer{
+    position: absolute;
+    margin-top: -30%;
+    height: 30vh;
+   }
+
+   #second-page>#footer>#logo{
+    display: none;
+   }
+
+   #second-page>#footer>#last-text{
+    margin-left: 8%;
+    padding-right: 10%;
+   }
+
+
+
+
+}
+
